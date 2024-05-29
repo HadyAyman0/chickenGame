@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+   
+    cursor: none;
+   
+}
+header
+{
+    background-image: url(../imgs/SpaceBackground.jpg);
+    height: 96vh;
+    overflow: hidden;
+    position: relative;
+}
+.spaceShip
+{
+    width: 100px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+}
+#chickenContainer img 
+{
+    width: 100px;
+    animation: chickenMove 350ms infinite alternate;
+}
+.dot 
+{
+    width: 30px;
+    position: absolute;
+    z-index: 12;
+    
+}
+footer h6
+{
+   color: red;
+}
+
+@keyframes chickenMove {
+    0%
+    {
+        scale: 0.91;
+        transform: translate(5px,5px);
+    }
+    100%
+    {
+        scale: 1;
+        transform: translate(0);
+    }
+    
+    
+}
+
+
+@keyframes dotMove {
+    0%
+    {
+        transform: translateY(-50px);
+    }
+    
+    25%
+    {
+        transform: translateY(-100px);
+    }
+    50%
+    {
+        transform: translateY(-150px);
+    }
+    75%
+    {
+        transform: translateY(-200px);
+    }
+    85%
+    {
+        transform: translateY(-300px);
+    }
+    95%
+    {
+        transform: translateY(-400px);
+    }
+
+    100%
+    {
+        transform: translateY(-800px);
+    }
+}
+
+
